@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "org.antennae.android.notifyapp"
+        minSdkVersion 14
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile files('libs/Parse-1.9.0.jar')
+    compile files('libs/ParseCrashReporting-1.9.0.jar')
+    compile files('libs/ParseFacebookUtilsV4-1.9.0.jar')
+    compile files('libs/bolts-android-1.1.4-javadoc.jar')
+    compile files('libs/bolts-android-1.1.4.jar')
+}
