@@ -15,11 +15,12 @@ public class NotifyApplication extends Application {
 		super.onCreate();
 		
 		// Enable Local Datastore.
-		Parse.enableLocalDatastore(this);
-		Parse.setLogLevel(Parse.LOG_LEVEL_DEBUG);
-		ParseCrashReporting.enable(this);
-		Parse.initialize(this, "N2aksV1jywajiRKOV92u42Scz3Q5RGFmOuW6Iwtx", "vfmxpQWtEIsweuTYGOC18dssmifgznEVTelzi8NS");
-		
+		//Parse.enableLocalDatastore(this);
+		//Parse.setLogLevel(Parse.LOG_LEVEL_DEBUG);
+		//ParseCrashReporting.enable(this);
+		//Parse.initialize(this, "N2aksV1jywajiRKOV92u42Scz3Q5RGFmOuW6Iwtx", "vfmxpQWtEIsweuTYGOC18dssmifgznEVTelzi8NS");
+
+		/*
 		ParsePush.subscribeInBackground("", new SaveCallback() {
 			  @Override
 			  public void done(ParseException e) {
@@ -30,5 +31,6 @@ public class NotifyApplication extends Application {
 			    }
 			  }
 			});
+			*/
 	}
 }

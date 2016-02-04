@@ -4,8 +4,8 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 
-import org.antennea.android.notifyapp.model.Alert;
-import org.antennea.android.notifyapp.model.AlertSeverityEnum;
+import org.antennae.android.notifyapp.model.Alert;
+import org.antennae.android.notifyapp.model.AlertSeverityEnum;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -3,8 +3,8 @@ package org.antennae.android.notifyapp;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.antennea.android.notifyapp.model.Alert;
-import org.antennea.android.notifyapp.model.AlertSeverityEnum;
+import org.antennae.android.notifyapp.model.Alert;
+import org.antennae.android.notifyapp.model.AlertSeverityEnum;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -71,7 +71,7 @@ public class MainActivity extends Activity {
         Intent intent = getIntent();
         
         
-        ParseAnalytics.trackAppOpenedInBackground(getIntent());
+        //ParseAnalytics.trackAppOpenedInBackground(getIntent());
         
         setContentView(R.layout.activity_main);
         
@@ -92,12 +92,7 @@ public class MainActivity extends Activity {
     
     private void populateAlerts() {
 		alerts = new ArrayList<Alert>();
-		
-//		for(int i=0;i<10;i++) {
-//			Alert alert = new Alert("title" + i, "message " + i, AlertSeverityEnum.values()[i%5].toString(), "action" + i);
-//			alerts.add(alert);
-//		}
-		
+
 		Alert alert1 = new Alert("High I/O on ADP Apps", "ADP backend has abnormally high IO", AlertSeverityEnum.HIGH.toString(), "Join the bridge on 1-873-555-3846 #556");
 		Alert alert2 = new Alert("MySQL index issue", "MySql index is slower on quote system", AlertSeverityEnum.SEVERE.toString(), "Join the bridge on 1-873-555-3846 #598");
 		

@@ -1,7 +1,7 @@
 package org.antennae.android.notifyapp;
 
-import org.antennea.android.notifyapp.model.Alert;
-import org.antennea.android.notifyapp.model.AlertSeverityEnum;
+import org.antennae.android.notifyapp.model.Alert;
+import org.antennae.android.notifyapp.model.AlertSeverityEnum;
 
 import org.antennae.android.notifyapp.R;
 
